@@ -4,16 +4,18 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: m165437 #new entry
+      url-base: https://github.com/M165437 #new entry
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    # - name: gpeye
+    #   url-base: https://github.com/GPeye
   projects:
-    - name: mario-peripheral-animation
-      remote: gpeye
-      revision: main 
+    # - name: mario-peripheral-animation
+    #   remote: gpeye
+    #   revision: main 
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: main
@@ -24,5 +26,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: v0.3
+    - name: nice-view-gem #new entry
+      remote: m165437 #new entry
+      revision: main #new entry
   self:
     path: boards
